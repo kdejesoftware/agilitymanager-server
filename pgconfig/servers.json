@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "AgilityManager DB Server",
+            "Group": "AgilityManager",
+            "Port": 5432,
+            "Username": "agilitymanager",
+            "Host": "agilitymanager_db",
+            "SSLMode": "prefer",
+            "MaintenanceDB": "agilitymanager"
+        }
+    }
+}
