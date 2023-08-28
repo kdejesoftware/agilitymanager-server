@@ -1,0 +1,53 @@
+/**  =====================
+     custom backgrounds
+==========================  **/
+
+.theme-bg-black {
+  background: linear-gradient(-135deg, #4b4b4b 0%, #282828 100%);
+}
+
+.theme-bg-grey {
+  background: linear-gradient(-135deg, #73777B 0%, #2C3333 100%);
+}
+
+.theme-bg-pink {
+  background: linear-gradient(-135deg, #FFA1CF 0%, #FF74B1 100%);
+}
+
+.theme-bg-purple {
+  background: linear-gradient(-135deg, #FFABE1 0%, #C689C6 100%);
+}
+
+.theme-bg-red {
+  background: linear-gradient(-135deg, #FA9494 0%, #EB1D36 100%);
+}
+
+.theme-bg-yellow {
+  background: linear-gradient(-135deg, #ffd115 0%, #eb9f1d 100%);
+}
+
+.bg-c-green-50 {
+  background: #cdffed;
+}
+
+.bg-c-blue-50 {
+  background: #d5f9ff;
+}
+
+.bg-c-red-50 {
+  background: #ffeded;
+}
+
+.bg-c-yellow-50 {
+  background: rgb(255, 250, 243);
+}
+
+
+.theme-bg-grey-50 {
+  background: rgb(190, 190, 190);
+}
+
+.selected-run-theme {
+  color: #000000;
+  font-weight: bolder;
+}
