@@ -14,7 +14,7 @@ services:
     restart: "on-failure"
   agilitymanager_web:
     container_name: agilitymanager_web
-    image: kdejesoftware/agilitymanager:latest
+    image: kdejesoftware/agilitymanager:2.0.9
     command: bash -c '
         cd src &&
         python manage.py migrate &&
@@ -23,14 +23,14 @@ services:
         gunicorn agilitymanager.wsgi:application --bind 0.0.0.0:8000
       '
     environment:
-      - "DEFAULT_SUPERUSER_PASSWORD=admin"
-      - "ALLOWED_HOSTS=*"
-      - "DATABASE_NAME=agilitymanager"
-      - "DATABASE_USER=agilitymanager"
-      - "DATABASE_PASSWORD=admin"
-      - "DATABASE_HOST=agilitymanager_db"
-      - "API_SERVER=https://zarascope.agilitymanager.com"
-      - "REDIS_SERVER=redis://redis:6379"
+      DEFAULT_SUPERUSER_PASSWORD: admin
+      ALLOWED_HOSTS: localhost,*
+      DATABASE_NAME: agilitymanager
+      DATABASE_USER: agilitymanager
+      DATABASE_PASSWORD: admin
+      DATABASE_HOST: agilitymanager_db
+      API_SERVER: https://zarascope.agilitymanager.com
+      REDIS_SERVER: redis://redis:6379
     depends_on:
       - agilitymanager_db
   agilitymanager_db:
@@ -41,9 +41,9 @@ services:
     volumes:
       - agilitymanager_data:/var/lib/postgresql/data/
     environment:
-      - "POSTGRES_PASSWORD=admin"
-      - "POSTGRES_USER=agilitymanager"
-      - "POSTGRES_DB=agilitymanager"
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: agilitymanager
+      POSTGRES_DB: agilitymanager
   agilitymanager_pgadmin:
     container_name: agilitymanager_pgadmin
     image: dpage/pgadmin4:7.5
