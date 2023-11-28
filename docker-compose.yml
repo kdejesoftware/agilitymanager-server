@@ -14,7 +14,7 @@ services:
     restart: "on-failure"
   agilitymanager_web:
     container_name: agilitymanager_web
-    image: kdejesoftware/agilitymanager:2.0.9
+    image: kdejesoftware/agilitymanager:2.0.10
     command: bash -c '
         cd src &&
         python manage.py migrate &&
