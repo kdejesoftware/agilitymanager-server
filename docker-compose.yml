@@ -29,7 +29,7 @@ services:
       DATABASE_USER: agilitymanager
       DATABASE_PASSWORD: admin
       DATABASE_HOST: agilitymanager_db
-      API_SERVER: https://zarascope.agilitymanager.com
+      API_SERVER: https://api.agilitymanager.com
       REDIS_SERVER: redis://redis:6379
     depends_on:
       - agilitymanager_db
