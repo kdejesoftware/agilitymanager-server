@@ -5,7 +5,7 @@
             "Group": "AgilityManager",
             "Port": 5432,
             "Username": "agilitymanager",
-            "Host": "agilitymanager_db",
+            "Host": "db",
             "SSLMode": "prefer",
             "MaintenanceDB": "agilitymanager"
         }

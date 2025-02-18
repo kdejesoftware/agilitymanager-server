@@ -1,4 +1,4 @@
-# Agility Manager Server - compose
+# Agility Manager Server 2.0.13 - compose
 
 ## Start server
 
@@ -13,3 +13,5 @@ docker compose stop
 ```
 
 Here is [full documentation](https://docs.agilitymanager.com).
+
+Product webpage: [www.agilitymanager.com](https://agilitymanager.com).
