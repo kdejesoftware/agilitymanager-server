@@ -26,6 +26,10 @@
   background: linear-gradient(-135deg, #ffd115 0%, #eb9f1d 100%);
 }
 
+.theme-bg-blue {
+    background: linear-gradient(-135deg, #A1E4F2 0%, #13547A 100%);
+}
+
 .bg-c-green-50 {
   background: #cdffed;
 }
