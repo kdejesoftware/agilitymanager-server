@@ -20,7 +20,7 @@ services:
   
   web:
     container_name: ${STACK_NAME}_web
-    image: kdejesoftware/agilitymanager:2.0.13
+    image: kdejesoftware/agilitymanager:2.0.14
     command: bash -c '
         cd src &&
         ./run.sh
